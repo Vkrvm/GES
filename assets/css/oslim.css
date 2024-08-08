@@ -9240,3 +9240,10 @@ input[type=file] {
     display: none;
 }
 }
+ul.custom-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+ul.custom-list li::marker {
+    color: #862276;
+}
