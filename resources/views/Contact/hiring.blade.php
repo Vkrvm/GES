@@ -24,11 +24,22 @@
             <div class="container">
                 <div class="section-title text-center">
                     <h2 class="section-title__title">Start Your Career With GES</h2>
+                    @if(Session::has('sucsess'))
+                    <div class="alert alert-success" role="alert">
+                        {{Session::get('sucsess')}}
+                    </div>
+                    @endif
+                    @if(Session::has('fail'))
+                    <div class="alert alert-danger" role="alert">
+                        {{Session::get('fail')}}
+                    </div>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form action="https://oslim-html.vercel.app/assets/inc/sendemail.php" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                            <form action="{{route("newEmployee")}}" method="POST" class="comment-one__form contact-form-validated" novalidate="novalidate" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">

@@ -22,3 +22,5 @@ Route::get('/contact/client', [Contact::class , 'client'])->name('client');
 Route::get('/contact/employee', [Contact::class , 'employee'])->name('employee');
 Route::get('/contact/supplier', [Contact::class , 'supplier'])->name('supplier');
 Route::post('/contact/newclient', [Contact::class , 'newClient'])->name('newClient');
+Route::post('/contact/newemployee', [Contact::class , 'newEmployee'])->name('newEmployee');
+Route::post('/contact/newsupplier', [Contact::class , 'newSupplier'])->name('newSupplier');

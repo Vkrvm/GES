@@ -24,6 +24,16 @@
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Contact with us</span>
                     <h2 class="section-title__title">Write a Message</h2>
+                    @if(Session::has('sucsess'))
+                    <div class="alert alert-success" role="alert">
+                        {{Session::get('sucsess')}}
+                    </div>
+                    @endif
+                    @if(Session::has('fail'))
+                    <div class="alert alert-danger" role="alert">
+                        {{Session::get('fail')}}
+                    </div>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
@@ -38,7 +48,7 @@
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Phone" name="name">
+                                            <input type="text" placeholder="Phone" name="phone">
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
