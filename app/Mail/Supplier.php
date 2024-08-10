@@ -8,17 +8,22 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Attachment;
+
 
 class Supplier extends Mailable
 {
     use Queueable, SerializesModels;
-
+    public $data;
+    public $fileName;
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($data , $fileName)
     {
         //
+        $this->data = $data;
+        $this->fileName = $fileName;
     }
 
     /**
@@ -27,7 +32,7 @@ class Supplier extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Supplier',
+            subject: 'New Supplier Record',
         );
     }
 
@@ -48,6 +53,11 @@ class Supplier extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        if($this->fileName){
+            $attachments = [
+                Attachment::fromPath(public_path("attachment/" . $this->fileName))->as($this->data->companyName .'.pdf')->withMime('application/pdf')
+            ];
+        }
+        return $attachments;
     }
 }

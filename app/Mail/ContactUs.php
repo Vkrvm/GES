@@ -28,8 +28,7 @@ class ContactUs extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Us',
-            from: new Address('company@company.com', "fady gamil")
+            subject: 'Contact Us'
         );
     }
 

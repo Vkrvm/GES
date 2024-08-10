@@ -1,12 +1,8 @@
-<x-mail::message>
-# Introduction
+<h1>New Supplier Record</h1>
 
-The body of your message.
-
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
-
-Thanks,<br>
-{{ config('app.name') }}
-</x-mail::message>
+<h2>Full Name: {{$data->name}} </h2>
+<h2>Email: {{$data->email}} </h2>
+<h2>Phone: {{$data->phone}} </h2>
+<h2>Company Name: {{$data->companyName}} </h2>
+<h2>Address: {{$data->address}} </h2>
+<h2>City: {{$data->city}} </h2>
