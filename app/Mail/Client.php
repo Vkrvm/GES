@@ -6,10 +6,11 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactUs extends Mailable
+class Client extends Mailable
 {
     use Queueable, SerializesModels;
     public $data;
@@ -18,9 +19,7 @@ class ContactUs extends Mailable
      */
     public function __construct($data)
     {
-        //
         $this->data = $data;
-
     }
 
     /**
@@ -29,7 +28,7 @@ class ContactUs extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Us new record',
+            subject: 'New Client'
         );
     }
 
@@ -39,7 +38,7 @@ class ContactUs extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.contactUs',
+            markdown: 'emails.client',
         );
     }
 

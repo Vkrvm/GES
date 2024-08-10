@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactUS;
+use App\Mail\ContactUs;
+use App\Mail\Client;
 use App\Mail\Employee;
 use App\Mail\Supplier;
 
@@ -22,7 +22,25 @@ class Contact extends Controller
     public function supplier(){
         return view('contact.supplierform');
     }
+    public function newContact(Request $request){
+        $request->validate([
+            "name" => "required|string",
+            "phone" => "required|numeric",
+            "email" => "required|email",
+            "subject" => "required",
+            "message" => "required|string|max:255"
 
+        ]);
+
+        $res = Mail::to("mahakram35@gmail.com")->send(new ContactUs($request));
+        
+        if($res){
+            return back()->with('sucsess' , 'Thanks For Your Message');
+        }
+        else{
+            return back()->with('fail' , 'Something Went Wrong');
+        }
+    }
     public function newClient(Request $request){
         $request->validate([
             "name" => "required|string",
@@ -34,7 +52,7 @@ class Contact extends Controller
 
         ]);
 
-        $res = Mail::to("mahakram35@gmail.com")->send(new ContactUS($request));
+        $res = Mail::to("mahakram35@gmail.com")->send(new Client($request));
         
         if($res){
             return back()->with('sucsess' , 'Thanks For Your Message');

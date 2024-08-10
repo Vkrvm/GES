@@ -87,42 +87,57 @@
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Contact with us</span>
                     <h2 class="section-title__title">Write a Message</h2>
+                    @if(Session::has('sucsess'))
+                        <div class="alert alert-success" role="alert">
+                            {{Session::get('sucsess')}}
+                        </div>
+                    @endif
+                        @if(Session::has('fail'))
+                        <div class="alert alert-danger" role="alert">
+                            {{Session::get('fail')}}
+                        </div>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form action="https://oslim-html.vercel.app/assets/inc/sendemail.php" class="comment-one__form contact-form-validated"
-                                novalidate="novalidate">
+                            <form action="{{route("newContact")}}" method="POST"  class="comment-one__form contact-form-validated" novalidate="novalidate">
+                                @csrf
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Full name" name="name">
+                                            <input type="text" value="{{old("name")}}" placeholder="Full name" name="name">
+                                            <span class="text-danger">@error('name') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="email" placeholder="Email address" name="email">
+                                            <input type="email" value="{{old("email")}}" placeholder="Email address" name="email">
+                                            <span class="text-danger">@error('email') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Phone" name="name">
+                                            <input type="text" value="{{old("phone")}}" placeholder="Phone" name="phone">
+                                            <span class="text-danger">@error('phone') {{$message}} @enderror </span>
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Subject" name="subject">
+                                            <input type="text" value="{{old("subject")}}" placeholder="Subject" name="subject">
+                                            <span class="text-danger">@error('subject') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="comment-form__input-box text-message-box">
-                                            <textarea name="message" placeholder="Write a Message"></textarea>
+                                            <textarea name="message" placeholder="Write a Message">@if( old("message") !== ""){{old("message")}}@endif</textarea>
                                         </div>
+                                        <span class="text-danger">@error('message') {{$message}} @enderror </span>
                                         <div class="btn-box">
-                                            <button type="submit" class="thm-btn comment-form__btn">Send a
-                                                message</button>
+                                            <button type="submit" class="thm-btn comment-form__btn">Send a message</button>
                                         </div>
                                     </div>
                                 </div>
