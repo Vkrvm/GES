@@ -24,6 +24,16 @@ class Contact extends Controller
     }
 
     public function newClient(Request $request){
+        $request->validate([
+            "name" => "required|string",
+            "phone" => "required|numeric",
+            "email" => "required|email",
+            "region" => "required",
+            "inquiry" => "required",
+            "message" => "required|string|max:255"
+
+        ]);
+
         $res = Mail::to("mahakram35@gmail.com")->send(new ContactUS($request));
         
         if($res){

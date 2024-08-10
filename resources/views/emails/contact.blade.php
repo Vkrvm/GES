@@ -3,7 +3,7 @@
 <h2>Phone: {{$data->phone}}</h2>
 <h2>Email: {{$data->email}}</h2>
 <h2>Region: {{$data->region}}</h2>
-<h2>Inquiry: {{$data->subject}}</h2>
+<h2>Inquiry: {{$data->inquiry}}</h2>
 <h2>Message: {{$data->message}}</h2>
 
 Thanks

@@ -38,22 +38,25 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form action="{{route("newClient")}}" method="POST" class="comment-one__form contact-form-validated">
+                            <form action="{{route("newClient")}}" method="POST" class="comment-one__form contact-form-validated" novalidate="novalidate">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Full name" name="name">
+                                            <input type="text" value="{{old("name")}}" placeholder="Full name" name="name">
+                                            <span class="text-danger">@error('name') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Phone" name="phone">
+                                            <input type="text" value="{{old("phone")}}" placeholder="Phone" name="phone">
+                                            <span class="text-danger">@error('phone') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="comment-form__input-box">
-                                            <input type="email" placeholder="Email address" name="email">
+                                            <input type="email" value="{{old("email")}}" placeholder="Email address" name="email">
+                                            <span class="text-danger">@error('email') {{$message}} @enderror </span>
                                         </div>
                                     </div>
 
@@ -69,10 +72,11 @@
                                                 <option value="oceania">Oceania</option>
                                             </select>
                                         </div>
+                                        <span class="text-danger">@error('region') {{$message}} @enderror </span>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <select name="subject">
+                                            <select name="inquiry">
                                                 <option value="" disabled selected>Select Inquiry</option>
                                                 <option value="feedback">Feedback</option>
                                                 <option value="inquiry">Inquiry</option>
@@ -80,12 +84,14 @@
                                                 <option value="other">Other</option>
                                             </select>
                                         </div>
+                                        <span class="text-danger">@error('inquiry') {{$message}} @enderror </span>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="comment-form__input-box text-message-box">
-                                            <textarea name="message" placeholder="Write a Message"></textarea>
+                                            <textarea name="message" placeholder="Write a Message">@if( old("message") !== ""){{old("message")}}@endif</textarea>
+                                            <span class="text-danger">@error('message') {{$message}} @enderror </span>
                                         </div>
                                         <div class="btn-box">
                                             <button type="submit" class="thm-btn comment-form__btn">Send a
