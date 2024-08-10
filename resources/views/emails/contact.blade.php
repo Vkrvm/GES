@@ -1,12 +1,9 @@
-<x-mail::message>
-# Introduction
+<h1>New contact us record..</h1><br>
+<h2>Name: {{$data->name}}</h2>
+<h2>Phone: {{$data->phone}}</h2>
+<h2>Email: {{$data->email}}</h2>
+<h2>Region: {{$data->region}}</h2>
+<h2>Inquiry: {{$data->subject}}</h2>
+<h2>Message: {{$data->message}}</h2>
 
-The body of your message.
-
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
-
-Thanks,<br>
-{{ config('app.name') }}
-</x-mail::message>
+Thanks

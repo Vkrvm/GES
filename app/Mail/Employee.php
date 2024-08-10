@@ -9,17 +9,21 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Attachment;
 
-class ContactUs extends Mailable
+
+class Employee extends Mailable
 {
     use Queueable, SerializesModels;
     public $data;
+    public $fileName;
     /**
      * Create a new message instance.
      */
-    public function __construct($data)
+    public function __construct($data , $fileName)
     {
         $this->data = $data;
+        $this->$fileName = $fileName;
     }
 
     /**
@@ -28,7 +32,7 @@ class ContactUs extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Us',
+            subject: 'New Employee record',
             from: new Address('company@company.com', "fady gamil")
         );
     }
@@ -39,7 +43,7 @@ class ContactUs extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.contact',
+            markdown: 'emails.employee',
         );
     }
 
@@ -50,6 +54,12 @@ class ContactUs extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        $attachments = [];
+        if($this->fileName){
+            $attachments = [
+                Attachment::frompath('public/attachment/'.$this->fileName)->as('resume.pdf')->withMime('application/pdf')
+            ];
+        }
+        return $attachments;
     }
 }

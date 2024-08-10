@@ -25,6 +25,16 @@
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Contact with us</span>
                     <h2 class="section-title__title">Write a Message</h2>
+                    @if(Session::has('sucsess'))
+                    <div class="alert alert-success" role="alert">
+                        {{Session::get('sucsess')}}
+                    </div>
+                    @endif
+                    @if(Session::has('fail'))
+                    <div class="alert alert-danger" role="alert">
+                        {{Session::get('fail')}}
+                    </div>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
