@@ -74,6 +74,15 @@ class Contact extends Controller
     }
 
     public function newSupplier(Request $request){
+        $request->validate([
+            "name" => "required|string",
+            "companyName" => "required|string",
+            "email" => "required|email",
+            "city" => "required|string",
+            "address" => "required|string",
+            "phone" => "required|numeric",
+            "companyProfile" => "required|max:10000|mimes:pdf"
+        ]);
         $fileName = time() . "." . $request->file('companyProfile')->extension();
         $request->companyProfile->move('attachment',$fileName);
         $res = Mail::to("mahakram35@gmail.com")->send(new Supplier($request,$fileName));

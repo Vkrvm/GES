@@ -39,48 +39,56 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form action="{{route("newSupplier")}}" method="POST" class="comment-one__form contact-form-validated"  enctype="multipart/form-data">
+                            <form action="{{route("newSupplier")}}" method="POST" class="comment-one__form contact-form-validated"  enctype="multipart/form-data" novalidate="novalidate">
                                 @csrf
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="name" class="form-label">Name *</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+                                        <input type="text" value="{{old("name")}}" class="form-control" id="name" placeholder="Name" name="name" required>
+                                        <span class="text-danger">@error('name') {{$message}} @enderror </span>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="companyName" class="form-label">Company Name *</label>
-                                        <input type="text" class="form-control" id="companyName" placeholder="Company Name" name="companyName" required>
+                                        <input type="text" value="{{old("companyName")}}" class="form-control" id="companyName" placeholder="Company Name" name="companyName" required>
+                                        <span class="text-danger">@error('companyName') {{$message}} @enderror </span>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="address" class="form-label">Address *</label>
-                                        <input type="text" class="form-control" id="address" placeholder="Address" name="address" required>
+                                        <input type="text" value="{{old("address")}}" class="form-control" id="address" placeholder="Address" name="address" required>
+                                        <span class="text-danger">@error('address') {{$message}} @enderror </span>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="city" class="form-label">City *</label>
-                                        <input type="text" class="form-control" id="city" placeholder="City" name="city" required>
+                                        <input type="text" value="{{old("city")}}" class="form-control" id="city" placeholder="City" name="city" required>
+                                        <span class="text-danger">@error('city') {{$message}} @enderror </span>
+
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="email" class="form-label">Email *</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                                        <input type="email" value="{{old("email")}}" class="form-control" id="email" placeholder="Email" name="email" required>
+                                        <span class="text-danger">@error('email') {{$message}} @enderror </span>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="companyProfile" class="form-label">Company Profile *</label>
                                         <input type="file" class="form-control" id="companyProfile" name="companyProfile" required>
+                                        <span class="text-danger">@error('companyProfile') {{$message}} @enderror </span>
                                     </div>
                                 </div>                                
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="phone" class="form-label">Phone *</label>
-                                        <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone" required>
+                                        <input type="text" value="{{old("phone")}}" class="form-control" id="phone" placeholder="Phone" name="phone" required>
+                                        <span class="text-danger">@error('phone') {{$message}} @enderror </span>
                                     </div>
                                 </div>
                                 <div class="mb-3">
