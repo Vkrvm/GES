@@ -44,25 +44,30 @@
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="name" class="form-label">Full name *</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Full name" name="name" required>
+                                            <input type="text" class="form-control" value="{{old("name")}}" id="name" placeholder="Full name" name="name" required>
+                                            <span class="text-danger">@error('name') {{$message}} @enderror </span>
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="email" class="form-label">Email address *</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Email address" name="email" required>
+                                            <input type="email" value="{{old("email")}}" class="form-control" id="email" placeholder="Email address" name="email" required>
+                                            <span class="text-danger">@error('email') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="phone" class="form-label">Phone *</label>
-                                            <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone" required>
+                                            <input type="text" value="{{old("phone")}}" class="form-control" id="phone" placeholder="Phone" name="phone" required>
+                                            <span class="text-danger">@error('phone') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="address" class="form-label">Address *</label>
-                                            <input type="text" class="form-control" id="address" placeholder="Address" name="address" required>
+                                            <input type="text" value="{{old("address")}}" class="form-control" id="address" placeholder="Address" name="address" required>
+                                            <span class="text-danger">@error('address') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 mb-3">
@@ -106,7 +111,9 @@
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="graduationYear" class="form-label">Graduation Year *</label>
-                                            <input type="number" class="form-control" id="graduationYear" placeholder="Graduation Year" name="graduationYear" required>
+                                            <input type="number" value="{{old("graduationYear")}}" class="form-control" id="graduationYear" placeholder="Graduation Year" name="graduationYear" required>
+                                            <span class="text-danger">@error('graduationYear') {{$message}} @enderror </span>
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 mb-3">
@@ -132,13 +139,14 @@
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="otherJobPosition" class="form-label">Other Job Position</label>
-                                            <input type="text" class="form-control" id="otherJobPosition" placeholder="Other Job Position" name="otherJobPosition">
+                                            <input type="text" value="{{old("otherJobPosition")}}" class="form-control" id="otherJobPosition" placeholder="Other Job Position" name="otherJobPosition">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 mb-3">
                                         <div class="comment-form__input-box">
                                             <label for="resume" class="form-label">Attach Resume *</label>
-                                            <input type="file" class="form-control" id="resume" name="resume" required accept=".pdf,.docx">
+                                            <input type="file" value="{{old("name")}}" class="form-control" id="resume" name="resume" required accept=".pdf,.docx">
+                                            <span class="text-danger">@error('resume') {{$message}} @enderror </span>
                                         </div>
                                     </div>
                                 </div>

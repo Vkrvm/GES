@@ -45,6 +45,20 @@ class Contact extends Controller
     }
 
     public function newEmployee(Request $request){
+        $request->validate([
+            "name" => "required|string",
+            "email" => "required|email",
+            "phone" => "required|numeric",
+            "address" => "required|string",
+            "gender" => "required|string",
+            "maritalStatus" => "required|string",
+            "recruitmentStatus" => "required|string",
+            "qualification" => "required|string",
+            "graduationYear" => "required",
+            "jobPosition" => "required|string",
+            "resume" => "required|max:10000|mimes:pdf"
+        ]);
+
         $fileName = time() . "." . $request->file('resume')->extension();
         $request->resume->move('attachment',$fileName);
         $res = Mail::to("mahakram35@gmail.com")->send(new Employee($request,$fileName));
