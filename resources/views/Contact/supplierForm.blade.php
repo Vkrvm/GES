@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form action="{{route("newSupplier")}}" method="POST" class="comment-one__form contact-form-validated" novalidate="novalidate" enctype="multipart/form-data">
+                            <form action="{{route("newSupplier")}}" method="POST" class="comment-one__form contact-form-validated"  enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">

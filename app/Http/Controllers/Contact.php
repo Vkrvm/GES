@@ -50,10 +50,11 @@ class Contact extends Controller
     }
 
     public function newSupplier(Request $request){
+        $fileName = time() . "." . $request->file('companyProfile')->extension();
+        $request->companyProfile->move('attachment',$fileName);
         $res = Mail::to("mahakram35@gmail.com")->send(new Supplier($request,$fileName));
-        
         if($res){
-            File::delete('attachment/'.$fileName);
+            File::delete('attachment/' . $fileName);
             return back()->with('sucsess' , 'Thanks For Your Message');
         }
         else{

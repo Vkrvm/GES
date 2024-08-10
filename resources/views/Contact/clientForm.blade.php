@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form action="{{route("newClient")}}" method="POST" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                            <form action="{{route("newClient")}}" method="POST" class="comment-one__form contact-form-validated">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-6">
