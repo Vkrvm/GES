@@ -23,7 +23,7 @@ class Employee extends Mailable
     public function __construct($data , $fileName)
     {
         $this->data = $data;
-        $this->$fileName = $fileName;
+        $this->fileName = $fileName;
     }
 
     /**
@@ -57,7 +57,7 @@ class Employee extends Mailable
         $attachments = [];
         if($this->fileName){
             $attachments = [
-                Attachment::frompath('public/attachment/'.$this->fileName)->as('resume.pdf')->withMime('application/pdf')
+                Attachment::fromPath(public_path("attachment/" . $this->fileName))->as($this->data->name .'_resume.pdf')->withMime('application/pdf')
             ];
         }
         return $attachments;
