@@ -29,7 +29,7 @@
 						<!--Services One Single-->
 						<div class="services-one__single">
 							<div class="services-one__img">
-								<img src="{{asset("images/services/services-1-1.jpg")}}" alt="">
+								<img src="{{asset("images/services/services-1-1.png")}}" alt="">
 							</div>
 							<div class="services-one__content">
 								<div class="services-one__title-box">
@@ -50,7 +50,7 @@
 						<!--Services One Single-->
 						<div class="services-one__single">
 							<div class="services-one__img">
-								<img src="{{asset("images/services/services-1-2.jpg")}}" alt="">
+								<img src="{{asset("images/services/services-1-2.png")}}" alt="">
 							</div>
 							<div class="services-one__content">
 								<div class="services-one__title-box">
@@ -71,7 +71,7 @@
 						<!--Services One Single-->
 						<div class="services-one__single">
 							<div class="services-one__img">
-								<img src="{{asset("images/services/services-1-3.jpg")}}" alt="">
+								<img src="{{asset("images/services/services-1-3.png")}}" alt="">
 							</div>
 							<div class="services-one__content">
 								<div class="services-one__title-box">
@@ -92,7 +92,7 @@
 						<!--Services One Single-->
 						<div class="services-one__single">
 							<div class="services-one__img">
-								<img src="{{asset("images/services/services-1-3.jpg")}}" alt="">
+								<img src="{{asset("images/services/services-1-4.png")}}" alt="">
 							</div>
 							<div class="services-one__content">
 								<div class="services-one__title-box">

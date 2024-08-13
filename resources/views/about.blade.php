@@ -27,7 +27,7 @@
                         <div class="work-together-two__left wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
                             <div class="work-together-two__img">
-                                <img src="{{asset("/images/resources/work-together-two-img-1.jpg")}}" alt="">
+                                <img src="{{asset("/images/resources/work-together-two-img-1.png")}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 of corporate solutions in Egypt and Saudi Arabia,
                                 delivering a comprehensive range of services designed
                                 to empower businesses and foster growth.
-                                
+
                                 </p>
                         </div>
                     </div>

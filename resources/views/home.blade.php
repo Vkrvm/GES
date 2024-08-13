@@ -18,7 +18,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="image-layer" style="
-                  background-image: url({{asset("images/backgrounds/main-slider-1-1.jpg")}});
+                  background-image: url({{asset("images/backgrounds/main-slider-1-1.jpeg")}});
                 "></div>
             <!-- /.image-layer -->
             <div class="main-slider-shape-1"></div>
@@ -42,7 +42,7 @@
           </div>
           <div class="swiper-slide">
             <div class="image-layer" style="
-                  background-image: url({{asset("images/backgrounds/main-slider-1-2.jpg")}});
+                  background-image: url({{asset("images/backgrounds/main-slider-1-2.jpeg")}});
                 "></div>
             <!-- /.image-layer -->
             <div class="main-slider-shape-1"></div>
@@ -66,7 +66,7 @@
           </div>
           <div class="swiper-slide">
             <div class="image-layer" style="
-                  background-image: url({{asset("images/backgrounds/main-slider-1-3.jpg")}});
+                  background-image: url({{asset("images/backgrounds/main-slider-1-3.jpeg")}});
                 "></div>
             <!-- /.image-layer -->
             <div class="main-slider-shape-1"></div>
