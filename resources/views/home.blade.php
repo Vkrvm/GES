@@ -127,7 +127,7 @@
                 <div class="welcome-one__video-link wow fadeInRight" data-wow-delay="200ms" style="
                       background-image: url({{asset("images/backgrounds/welcome-one-video-link-bg.jpg")}});
                     ">
-                  <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                  {{-- <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup"> --}}
                     <div class="welcome-one__video-icon">
                       <span class="fas fa-play"></span>
                     </div>
@@ -206,9 +206,9 @@
                   <img src="{{asset("images/shapes/work-together-shape-1.png")}}" alt />
                 </div>
                 <div class="work-together__img-1">
-                  <img src="{{asset("images/resources/work-together-img-1.jpg")}}" alt />
+                  <img src="{{asset("images/resources/post-6.png")}}" width="400px" alt />
                   <div class="work-together__img-2">
-                    <img src="{{asset("images/resources/work-together-img-2.jpg")}}" alt />
+                    {{-- <img src="{{asset("images/resources/work-together-img-2.jpg")}}" alt /> --}}
                   </div>
                 </div>
               </div>

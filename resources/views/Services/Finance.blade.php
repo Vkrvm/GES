@@ -56,7 +56,7 @@
                     <div class="col-xl-8 col-lg-7">
                         <div class="service-details__right">
                             <div class="service-details__img">
-                                <img src="{{asset("images/services/services-1-4.png")}}" alt="">
+                                <img src="{{asset("images/services/services-1-4.png")}}" style="width: 400px !important;" alt="">
                             </div>
                             <div class="service-details__content">
                                 <div class="service-details__title-box">
