@@ -12,15 +12,15 @@ use App\Mail\Supplier;
 class Contact extends Controller
 {
     public function client(){
-        return view('contact.clientForm');
+        return view('Contact.clientForm');
     }
 
     public function employee(){
-        return view('contact.hiring');
+        return view('Contact.hiring');
     }
 
     public function supplier(){
-        return view('contact.supplierForm');
+        return view('Contact.supplierForm');
     }
     public function newContact(Request $request){
         $request->validate([
