@@ -19,6 +19,6 @@ class Service extends Controller
     }
 
     public function itsolutions(){
-        return view('Services.itSolutions');
+        return view('Services.ItSolutions');
     }
 }
