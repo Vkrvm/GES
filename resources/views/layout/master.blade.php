@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home One || Oslim || Oslim HTML Template For Business</title>
+  <title>Golden Eagle Solutions</title>
   <!-- favicons Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="{{asset("images/favicons/apple-touch-icon.png")}}" />
   <link rel="icon" type="image/png" sizes="32x32" href="{{asset("images/favicons/favicon-32x32.png")}}" />
@@ -130,7 +130,7 @@
                     <h3 class="footer-widget__title">Explore</h3>
                     <ul class="footer-widget__explore-list list-unstyled clearfix">
                     <li><a href="{{route("about")}}">About</a></li>
-                    <li><a href="portfolio.pdf" download>Portfolio</a></li>
+                    <li><a href="GESProfile.pdf" download>Portfolio</a></li>
                     <li><a href="{{route("contactus")}}">Contact</a></li>
                     </ul>
                 </div>
