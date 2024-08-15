@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class Service extends Controller
 {
     public function advertising(){
-        return view('services.advertising');
+        return view('Services.advertising');
     }
-    
+
     public function hrSolutions(){
-        return view('services.hrsolutions');
+        return view('Services.hrsolutions');
     }
-    
+
     public function financeSolutions(){
-        return view('services.finance');
+        return view('Services.finance');
     }
 
     public function itsolutions(){
-        return view('services.itsolutions');
+        return view('Services.itsolutions');
     }
 }
