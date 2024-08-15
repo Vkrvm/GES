@@ -122,19 +122,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6">
+            {{-- <div class="col-xl-6 col-lg-6">
               <div class="welcome-one__top-right">
                 <div class="welcome-one__video-link wow fadeInRight" data-wow-delay="200ms" style="
                       background-image: url({{asset("images/backgrounds/welcome-one-video-link-bg.jpg")}});
                     ">
-                  {{-- <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup"> --}}
+                  <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
                     <div class="welcome-one__video-icon">
                       <span class="fas fa-play"></span>
                     </div>
                   </a>
                 </div>
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
         <div class="welcome-one__bottom">
