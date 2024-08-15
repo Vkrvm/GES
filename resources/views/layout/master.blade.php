@@ -130,7 +130,7 @@
                     <h3 class="footer-widget__title">Explore</h3>
                     <ul class="footer-widget__explore-list list-unstyled clearfix">
                     <li><a href="{{route("about")}}">About</a></li>
-                    <li><a href="GESProfile.pdf" download>Portfolio</a></li>
+                    <li><a href="{{ asset('attachment/GESProfile.pdf') }}" download>Portfolio</a></li>
                     <li><a href="{{route("contactus")}}">Contact</a></li>
                     </ul>
                 </div>
