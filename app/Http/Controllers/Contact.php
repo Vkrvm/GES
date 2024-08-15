@@ -12,15 +12,15 @@ use App\Mail\Supplier;
 class Contact extends Controller
 {
     public function client(){
-        return view('contact.clientform');
+        return view('contact.client');
     }
 
     public function employee(){
-        return view('contact.hiring');
+        return view('contact.employee');
     }
 
     public function supplier(){
-        return view('contact.supplierform');
+        return view('contact.supplier');
     }
     public function newContact(Request $request){
         $request->validate([
@@ -33,7 +33,7 @@ class Contact extends Controller
         ]);
 
         $res = Mail::to("mahakram35@gmail.com")->send(new ContactUs($request));
-        
+
         if($res){
             return back()->with('sucsess' , 'Thanks For Your Message');
         }
@@ -53,7 +53,7 @@ class Contact extends Controller
         ]);
 
         $res = Mail::to("mahakram35@gmail.com")->send(new Client($request));
-        
+
         if($res){
             return back()->with('sucsess' , 'Thanks For Your Message');
         }
@@ -80,7 +80,7 @@ class Contact extends Controller
         $fileName = time() . "." . $request->file('resume')->extension();
         $request->resume->move('attachment',$fileName);
         $res = Mail::to("mahakram35@gmail.com")->send(new Employee($request,$fileName));
-        
+
         if($res){
             File::delete('attachment/'.$fileName);
             return back()->with('sucsess' , 'Thanks For Your Message');
