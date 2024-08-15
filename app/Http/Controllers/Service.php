@@ -11,14 +11,14 @@ class Service extends Controller
     }
 
     public function hrSolutions(){
-        return view('Services.hrsolutions');
+        return view('Services.HrSolutions');
     }
 
     public function financeSolutions(){
-        return view('Services.finance');
+        return view('Services.Finance');
     }
 
     public function itsolutions(){
-        return view('Services.itsolutions');
+        return view('Services.itSolutions');
     }
 }
