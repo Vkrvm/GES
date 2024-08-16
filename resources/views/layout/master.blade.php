@@ -11,7 +11,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{asset("images/favicons/favicon-32x32.png")}}" />
   <link rel="icon" type="image/png" sizes="16x16" href="{{asset("images/favicons/favicon-16x16.png")}}" />
   <link rel="manifest" href="{{asset("images/favicons/site.webmanifest")}}" />
-  <meta name="description" content="Oslim HTML Template For Business"/>
+  <meta name="description" content="Navigating business challenges is easier with a trusted advisor
+by your side.
+Our expert management consultants at GES provide ongoing support and strategic insights to help your business thrive.
+GES offers integrated services in Advertising, HR,Finance, and IT, providing a seamless experience that saves you time and enhances efficiency."/>
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com/" />
