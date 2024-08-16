@@ -9249,4 +9249,5 @@ ul.custom-list li::marker {
 }
 .d-flex.forms-buttons{
     gap: 10px;
+    text-align: center;
 }
