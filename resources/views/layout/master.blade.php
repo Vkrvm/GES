@@ -57,7 +57,7 @@ GES offers integrated services in Advertising, HR,Finance, and IT, providing a s
 </head>
 <body>
     <div class="preloader">
-        <img class="preloader__image" width="60" src="{{asset("images/loader.png")}}" alt />
+        <img class="preloader__image" width="300" src="{{asset("images/loader.png")}}" alt />
     </div>
     <div class="page-wrapper">
         <header class="main-header clearfix">
