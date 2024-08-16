@@ -215,7 +215,7 @@
                                 <img src="{{ asset('images/shapes/work-together-shape-1.png') }}" alt />
                             </div>
                             <div class="work-together__img-1">
-                                <img src="{{ asset('images/resources/post-6.png') }}" width="400px" alt />
+                                <img src="{{ asset('images/resources/Post-6.png') }}" width="400px" alt />
                                 <div class="work-together__img-2">
                                     {{-- <img src="{{asset("images/resources/work-together-img-2.jpg")}}" alt /> --}}
                                 </div>
