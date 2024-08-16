@@ -1489,6 +1489,9 @@
         color: var(--oslim-black);
     }
 
-
+    .d-flex.forms-buttons{
+        gap: 10px;
+        flex-direction: column;
+    }
 
 }

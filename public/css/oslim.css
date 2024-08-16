@@ -9247,3 +9247,6 @@ ul.custom-list {
 ul.custom-list li::marker {
     color: #862276;
 }
+.d-flex.forms-buttons{
+    gap: 10px;
+}
