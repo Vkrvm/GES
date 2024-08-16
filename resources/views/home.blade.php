@@ -448,7 +448,7 @@
                                 <a href="{{ route('hrSolutions') }}">HR Solutions</a>
                             </h3>
                             <p class="trusted-one__text">Morbi nec finibus misd</p>
-                            <h3 class="odometer" data-count="16">0</h3>
+                            <h3 class="odometer" data-count="84">0</h3>
                         </li>
                         <li class="trusted one__single wow fadeInLeft col-xl-6 m-0" data-wow-delay="300ms">
                             <div class="trusted-one__icon">
@@ -458,7 +458,7 @@
                                 <a href="{{ route('itSolutions') }}">IT Solution</a>
                             </h3>
                             <p class="trusted-one__text">Morbi nec finibus misd</p>
-                            <h3 class="odometer" data-count="26">0</h3>
+                            <h3 class="odometer" data-count="76">0</h3>
                         </li>
                         <li class="trusted one__single wow fadeInLeft col-xl-6 m-0" data-wow-delay="100ms">
                             <div class="trusted-one__icon">
