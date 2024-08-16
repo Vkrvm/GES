@@ -99,7 +99,7 @@
                             <a href="{{route('about')}}" class="thm-btn our-mission-two__btn">Discover More</a>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4">
+                    {{-- <div class="col-xl-4 col-lg-4">
                         <div class="our-mission-two__right">
                             <div class="our-mission-two__video-link">
                                 <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
@@ -111,7 +111,7 @@
                                 <h3 class="our-mission-two__video-text">Watch video</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
