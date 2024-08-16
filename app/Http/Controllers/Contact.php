@@ -32,7 +32,7 @@ class Contact extends Controller
 
         ]);
 
-        $res = Mail::to("mahakram35@gmail.com")->send(new ContactUs($request));
+        $res = Mail::to("sarah.hendawy@ges-adv.com")->send(new ContactUs($request));
 
         if($res){
             return back()->with('sucsess' , 'Thanks For Your Message');
@@ -52,7 +52,7 @@ class Contact extends Controller
 
         ]);
 
-        $res = Mail::to("mahakram35@gmail.com")->send(new Client($request));
+        $res = Mail::to("sarah.hendawy@ges-adv.com")->send(new Client($request));
 
         if($res){
             return back()->with('sucsess' , 'Thanks For Your Message');
@@ -79,7 +79,7 @@ class Contact extends Controller
 
         $fileName = time() . "." . $request->file('resume')->extension();
         $request->resume->move('attachment',$fileName);
-        $res = Mail::to("mahakram35@gmail.com")->send(new Employee($request,$fileName));
+        $res = Mail::to("sarah.hendawy@ges-adv.com")->send(new Employee($request,$fileName));
 
         if($res){
             File::delete('attachment/'.$fileName);
@@ -103,7 +103,7 @@ class Contact extends Controller
         ]);
         $fileName = time() . "." . $request->file('companyProfile')->extension();
         $request->companyProfile->move('attachment',$fileName);
-        $res = Mail::to("mahakram35@gmail.com")->send(new Supplier($request,$fileName));
+        $res = Mail::to("sarah.hendawy@ges-adv.com")->send(new Supplier($request,$fileName));
         if($res){
             File::delete('attachment/' . $fileName);
             return back()->with('sucsess' , 'Thanks For Your Message');
