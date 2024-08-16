@@ -162,6 +162,7 @@
                     </p>
                     <h4 class="footer-widget__contact-info">
                     <a href="tel:201116989222" class="footer-widget__contact-number">+20 11 - 1698 - 9222</a>
+                    <br>
                     <a href="mailto: info@ges-adv.com" class="footer-widget__contact-email"> info@ges-adv.com</a>
                     </h4>
                 </div>
