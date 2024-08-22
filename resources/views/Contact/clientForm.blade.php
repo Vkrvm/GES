@@ -64,12 +64,8 @@
                                         <div class="comment-form__input-box">
                                             <select name="region">
                                                 <option value="" disabled selected>Select region</option>
-                                                <option value="north-america">North America</option>
-                                                <option value="south-america">South America</option>
-                                                <option value="europe">Europe</option>
-                                                <option value="asia">Asia</option>
-                                                <option value="africa">Africa</option>
-                                                <option value="oceania">Oceania</option>
+                                                <option value="Egypt">Egypt</option>
+                                                <option value="Saudi Arabia">Saudi Arabia</option>
                                             </select>
                                         </div>
                                         <span class="text-danger">@error('region') {{$message}} @enderror </span>
@@ -78,10 +74,10 @@
                                         <div class="comment-form__input-box">
                                             <select name="inquiry">
                                                 <option value="" disabled selected>Select Inquiry</option>
-                                                <option value="feedback">Feedback</option>
-                                                <option value="inquiry">Inquiry</option>
-                                                <option value="support">Support</option>
-                                                <option value="other">Other</option>
+                                                <option value="Advertising">Advertising</option>
+                                                <option value="HR Solutions">HR Solutions</option>
+                                                <option value="IT Solutions">IT Solutions</option>
+                                                <option value="Finance Solutions">Finance Solutions</option>
                                             </select>
                                         </div>
                                         <span class="text-danger">@error('inquiry') {{$message}} @enderror </span>

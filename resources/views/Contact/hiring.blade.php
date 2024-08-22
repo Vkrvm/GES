@@ -74,6 +74,7 @@
                                         <div class="comment-form__input-box">
                                             <label for="gender" class="form-label">Gender *</label>
                                             <select id="gender" class="form-select form-control" name="gender" required>
+                                                <option value="" disabled selected>Select Your Gender</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                             </select>
@@ -83,6 +84,7 @@
                                         <div class="comment-form__input-box">
                                             <label for="maritalStatus" class="form-label">Marital Status *</label>
                                             <select id="maritalStatus" class="form-select form-control" name="maritalStatus" required>
+                                                <option value="" disabled selected>Select Your Martial Status</option>
                                                 <option value="Married">Married</option>
                                                 <option value="Single">Single</option>
                                             </select>
@@ -92,8 +94,9 @@
                                         <div class="comment-form__input-box">
                                             <label for="recruitmentStatus" class="form-label">Recruitment Status *</label>
                                             <select id="recruitmentStatus" class="form-select form-control" name="recruitmentStatus" required>
+                                                <option value="" disabled selected>Select Your Recruitment Status</option>
                                                 <option value="Exempted">Exempted</option>
-                                                <option value="Completed">Completed</option>
+                                                <option value="Completed">Postponed</option>
                                             </select>
                                         </div>
                                     </div>
@@ -101,6 +104,7 @@
                                         <div class="comment-form__input-box">
                                             <label for="qualification" class="form-label">Qualification *</label>
                                             <select id="qualification" class="form-select form-control" name="qualification" required>
+                                                <option value="" disabled selected>Select YOur Qualification</option>
                                                 <option value="Bachelors">Bachelors</option>
                                                 <option value="Masters">Masters</option>
                                                 <option value="Doctorate">Doctorate</option>
@@ -120,6 +124,7 @@
                                         <div class="comment-form__input-box">
                                             <label for="jobPosition" class="form-label">Job Position *</label>
                                             <select id="jobPosition" class="form-select form-control" name="jobPosition" required>
+                                                <option value="" disabled selected>Select Your Job Position</option>
                                                 <option value="Mechanical Engineer">Mechanical Engineer</option>
                                                 <option value="Electrical Engineer">Electrical Engineer</option>
                                                 <option value="Architect (Designer)">Architect (Designer)</option>
@@ -158,7 +163,7 @@
                                     </div>
                                 </div>
                             </form>
-                            
+
                         </div>
                     </div>
                 </div>
