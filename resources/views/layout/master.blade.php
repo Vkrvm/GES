@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golden Eagle Solutions</title>
+  <title>GES</title>
   <meta name="keywords" content="HR Consulting, HR Solutions, Recruitment Advisor, IT Solutions, IT Consulting, Finance Advisor, Finance Guidance, Advertising, BTL Advertising, Events, Exhibitions, Giveaways, Indoor Printing, Outdoor Printing">
 
   <!-- favicons Icons -->
