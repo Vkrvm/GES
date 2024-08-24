@@ -18,6 +18,34 @@ by your side.
 Our expert management consultants at GES provide ongoing support and strategic insights to help your business thrive.
 GES offers integrated services in Advertising, HR,Finance, and IT, providing a seamless experience that saves you time and enhances efficiency."/>
 
+<link rel="preload" href="{{asset('vendors/bootstrap/css/bootstrap.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/animate/animate.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/animate/custom-animate.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/fontawesome/css/all.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/jarallax/jarallax.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/nouislider/nouislider.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/nouislider/nouislider.pips.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/odometer/odometer.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/swiper/swiper.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/oslim-icons/style.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/tiny-slider/tiny-slider.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/reey-font/stylesheet.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/owl-carousel/owl.carousel.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/owl-carousel/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/bxslider/jquery.bxslider.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/bootstrap-select/css/bootstrap-select.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/vegas/vegas.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/jquery-ui/jquery-ui.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('vendors/timepicker/timePicker.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- template styles -->
+<link rel="preload" href="{{asset('css/oslim.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{asset('css/oslim-responsive.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com/" />
 
