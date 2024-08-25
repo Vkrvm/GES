@@ -144,7 +144,7 @@
                 <li class="welcome-one__feature-single wow fadeInUp" data-wow-delay="100ms">
                     <div class="welcome-one__feature-content">
                         <h3 class="welcome-one__feature-title">
-                            <a>Advertising</a>
+                            <a href="{{ route('advertising') }}">Advertising</a>
                         </h3>
                     </div>
                     <div class="welcome-one__feature-icon">
@@ -155,7 +155,7 @@
                 <li class="welcome-one__feature-single wow fadeInUp" data-wow-delay="100ms">
                     <div class="welcome-one__feature-content">
                         <h3 class="welcome-one__feature-title">
-                            <a>HR Solutions</a>
+                            <a href="{{ route('hrSolutions') }}">HR Solutions</a>
                         </h3>
                     </div>
                     <div class="welcome-one__feature-icon">
@@ -166,7 +166,7 @@
                 <li class="welcome-one__feature-single wow fadeInUp" data-wow-delay="200ms">
                     <div class="welcome-one__feature-content">
                         <h3 class="welcome-one__feature-title">
-                            <a>IT Solutions</a>
+                            <a href="{{ route('itSolutions') }}">IT Solutions</a>
                         </h3>
                     </div>
                     <div class="welcome-one__feature-icon">
@@ -177,7 +177,7 @@
                 <li class="welcome-one__feature-single wow fadeInUp" data-wow-delay="300ms">
                     <div class="welcome-one__feature-content">
                         <h3 class="welcome-one__feature-title">
-                            <a>Finance Solutions</a>
+                            <a href="{{ route('financeSolutions') }}">Finance Solutions</a>
                         </h3>
                     </div>
                     <div class="welcome-one__feature-icon">
