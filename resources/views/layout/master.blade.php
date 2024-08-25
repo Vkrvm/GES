@@ -78,14 +78,47 @@
 
 
 
-    <!-- fonts -->
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
+    <!-- Inline Critical CSS -->
+    <style>
+        @font-face {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Catamaran Regular'), local('Catamaran-Regular'),
+                url(https://fonts.gstatic.com/s/catamaran/v14/o-0MIpQmMCZ_Sb_ztY-FFO4iYw.woff2) format('woff2');
+            unicode-range: U+000-5FF;
+            /* Latin */
+        }
+
+        body {
+            font-family: 'Catamaran', sans-serif;
+            font-weight: 400;
+        }
+    </style>
+
+    <!-- Asynchronously Load Google Fonts -->
+    <script>
+        var link = document.createElement('link');
+        link.href =
+            'https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap';
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!-- Defer Non-Critical CSS -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    </noscript>
 
     <link rel="stylesheet" href="{{ asset('vendors/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('vendors/animate/animate.min.css') }}" />
@@ -120,7 +153,8 @@
 
 <body>
     <div class="preloader">
-        <img class="preloader__image" src="{{ asset('images/loader.png') }}" alt="Loader Image" width="300" height="169" />
+        <img class="preloader__image" src="{{ asset('images/loader.png') }}" alt="Loader Image" width="300"
+            height="169" />
     </div>
     <div class="page-wrapper">
         <header class="main-header clearfix">
@@ -132,7 +166,8 @@
                                     height="180" width="320" alt="logo" /></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
-                            <a href="#" class="mobile-nav__toggler" aria-label="Sidebar-btn"><i class="fa fa-bars"></i></a>
+                            <a href="#" class="mobile-nav__toggler" aria-label="Sidebar-btn"><i
+                                    class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
                                 <li class="{{ Route::is('home') ? 'current' : '' }}"><a
                                         href="{{ route('home') }}">Home</a></li>
@@ -156,8 +191,7 @@
                             </div>
                         </div>
                         <div class="main-menu-wrapper__search-cat">
-                            <a href="#"
-                                class="main-menu-wrapper__search search-toggler icon-magnifying-glass"
+                            <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"
                                 aria-label="Search"></a>
                         </div>
 
@@ -209,7 +243,8 @@
                                 <h3 class="footer-widget__title">Explore</h3>
                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
                                     <li><a href="{{ route('about') }}" aria-label="About">About</a></li>
-                                    <li><a href="{{ asset('attachment/GESProfile.pdf') }}" aria-label="Portfolio" download>Portfolio</a></li>
+                                    <li><a href="{{ asset('attachment/GESProfile.pdf') }}" aria-label="Portfolio"
+                                            download>Portfolio</a></li>
                                     <li><a href="{{ route('contactus') }}" aria-label="Contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -223,7 +258,8 @@
                                 <form class="footer-widget__newsletter-form">
                                     <div class="footer-widget__newsletter-input-box">
                                         <input type="email" placeholder="Email address" name="email" />
-                                        <button type="submit" class="footer-widget__newsletter-btn" aria-label="Submit">
+                                        <button type="submit" class="footer-widget__newsletter-btn"
+                                            aria-label="Submit">
                                             <i class="far fa-paper-plane"></i>
                                         </button>
                                     </div>
@@ -256,7 +292,8 @@
                                 </p>
                                 <h4 class="footer-widget__contact-info">
                                     <!-- <a href="tel:201116989222" class="footer-widget__contact-number">+20 11 - 1698 - 9222</a> -->
-                                    <a href="mailto: info@ges-adv.com" aria-label="Email" class="footer-widget__contact-email">
+                                    <a href="mailto: info@ges-adv.com" aria-label="Email"
+                                        class="footer-widget__contact-email">
                                         info@ges-adv.com</a>
                                 </h4>
                             </div>
@@ -287,7 +324,7 @@
 
             <div class="logo-box">
                 <a href="index-2.html" aria-label="logo image"><img src="{{ asset('images/logo/Logo GES-01.png') }}"
-                    height="180" width="320" alt="logo" /></a>
+                        height="180" width="320" alt="logo" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
