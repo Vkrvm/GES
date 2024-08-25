@@ -154,7 +154,7 @@
 <body>
     <div class="preloader">
         <img class="preloader__image" src="{{ asset('images/loader.webp') }}" alt="Loader Image" width="300"
-            height="169" />
+            height="169" Loading="lazy" />
     </div>
     <div class="page-wrapper">
         <header class="main-header clearfix">
