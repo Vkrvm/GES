@@ -148,7 +148,7 @@
                         </h3>
                     </div>
                     <div class="welcome-one__feature-icon">
-                        <span><img src="{{ asset('images/icon/chart-line-up (1).png') }}" alt="line chart"></span>
+                        <span><img src="{{ asset('images/icon/chart-line-up (1).png') }}" alt="line chart" loading="lazy" width="auto" height="auto"></span>
                     </div>
                     <div class="welcome-one__feature-count"></div>
                 </li>
@@ -205,10 +205,10 @@
                 <div class="work-together__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="work-together__img-box">
                         <div class="work-together-shape-1">
-                            <img src="{{ asset('images/shapes/work-together-shape-1.png') }}" alt />
+                            <img src="{{ asset('images/shapes/work-together-shape-1.png') }}" alt="work-together" loading="lazy" width="auto" height="auto" />
                         </div>
                         <div class="work-together__img-1">
-                            <img src="{{ asset('images/resources/Post-6.png') }}" width="400px" alt />
+                            <img src="{{ asset('images/resources/Post-6.png') }}" alt="work-together" loading="lazy" width="400px" height="auto" />
                             <div class="work-together__img-2">
                                 {{-- <img src="{{asset(" images/resources/work-together-img-2.jpg")}}" alt /> --}}
                             </div>
@@ -283,8 +283,7 @@
                         <ul class="list-unstyled benefits-one__points">
                             <li>
                                 <div class="icon">
-                                    <span><img src="{{ asset('images/icon/vision.png') }}" alt="" width="64"
-                                            height="64"></span>
+                                    <span><img src="{{ asset('images/icon/vision.png') }}" alt="work-together" loading="lazy" width="64" height="64"></span>
                                     <p>Vision</p>
                                 </div>
                                 <div class="text">
@@ -299,8 +298,7 @@
                             </li>
                             <li>
                                 <div class="icon">
-                                    <span><img src="{{ asset('images/icon/mission.png') }}" alt="" width="64"
-                                            height="64"></span>
+                                    <span><img src="{{ asset('images/icon/mission.png') }}" alt="work-together" loading="lazy" width="64" height="64"></span>
                                     <p>Mission</p>
                                 </div>
                                 <div class="text">
@@ -423,7 +421,7 @@
                 <ul class="list-unstyled trusted-one__content-box row">
                     <li class="trusted one__single wow fadeInLeft col-xl-6 m-0" data-wow-delay="100ms">
                         <div class="trusted-one__icon">
-                            <span><img src="{{ asset('images/icon/chart-line-up (1).png') }}" alt="line chart"
+                            <span><img src="{{ asset('images/icon/chart-line-up (1).png') }}" alt="line chart" loading="lazy"
                                     width="23" height="23"></span>
                         </div>
                         <h3 class="trusted-one__title">
