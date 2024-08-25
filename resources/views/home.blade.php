@@ -208,7 +208,7 @@
                             <img src="{{ asset('images/shapes/work-together-shape-1.png') }}" alt="work-together" loading="lazy" width="auto" height="auto" />
                         </div>
                         <div class="work-together__img-1">
-                            <img src="{{ asset('images/resources/Post-6.png') }}" alt="work-together" loading="lazy" width="400px" height="auto" />
+                            <img src="{{ asset('images/resources/Post-6.webp') }}" alt="work-together" loading="lazy" width="400px" height="auto" />
                             <div class="work-together__img-2">
                                 {{-- <img src="{{asset(" images/resources/work-together-img-2.jpg")}}" alt /> --}}
                             </div>
@@ -283,7 +283,7 @@
                         <ul class="list-unstyled benefits-one__points">
                             <li>
                                 <div class="icon">
-                                    <span><img src="{{ asset('images/icon/vision.png') }}" alt="work-together" loading="lazy" width="64" height="64"></span>
+                                    <span><img src="{{ asset('images/icon/vision.webp') }}" alt="work-together" loading="lazy" width="64" height="64"></span>
                                     <p>Vision</p>
                                 </div>
                                 <div class="text">
@@ -298,7 +298,7 @@
                             </li>
                             <li>
                                 <div class="icon">
-                                    <span><img src="{{ asset('images/icon/mission.png') }}" alt="work-together" loading="lazy" width="64" height="64"></span>
+                                    <span><img src="{{ asset('images/icon/mission.webp') }}" alt="work-together" loading="lazy" width="64" height="64"></span>
                                     <p>Mission</p>
                                 </div>
                                 <div class="text">

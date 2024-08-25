@@ -162,7 +162,7 @@
                 <div class="main-menu-wrapper clearfix">
                     <div class="main-menu-wrapper__left">
                         <div class="main-menu-wrapper__logo">
-                            <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.png') }}"
+                            <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
                                     height="180" width="320" alt="logo" /></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
@@ -218,7 +218,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
-                                    <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.png') }}"
+                                    <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
                                             height="100" alt /></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
@@ -323,7 +323,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="{{ asset('images/logo/Logo GES-01.png') }}"
+                <a href="index-2.html" aria-label="logo image"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
                         height="180" width="320" alt="logo" /></a>
             </div>
             <!-- /.logo-box -->
