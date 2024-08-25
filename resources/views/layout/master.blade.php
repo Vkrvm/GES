@@ -129,7 +129,7 @@
                     <div class="main-menu-wrapper__left">
                         <div class="main-menu-wrapper__logo">
                             <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.png') }}"
-                                    height="180" alt="logo" /></a>
+                                    height="180" width="auto" alt="logo" /></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
