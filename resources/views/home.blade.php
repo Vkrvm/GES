@@ -20,7 +20,7 @@
                 <div class="swiper-slide">
                     <div class="image-layer"
                         style="
-                  background-image: url({{ asset('images/backgrounds/main-slider-1-1.jpeg') }});
+                  background-image: url({{ asset('images/backgrounds/main-slider-1-1.webp') }});
                 ">
                     </div>
                     <!-- /.image-layer -->
@@ -46,7 +46,7 @@
                 <div class="swiper-slide">
                     <div class="image-layer"
                         style="
-                  background-image: url({{ asset('images/backgrounds/main-slider-1-2.jpeg') }});
+                  background-image: url({{ asset('images/backgrounds/main-slider-1-2.webp') }});
                 ">
                     </div>
                     <!-- /.image-layer -->
@@ -72,7 +72,7 @@
                 <div class="swiper-slide">
                     <div class="image-layer"
                         style="
-                  background-image: url({{ asset('images/backgrounds/main-slider-1-3.jpeg') }});
+                  background-image: url({{ asset('images/backgrounds/main-slider-1-3.webp') }});
                 ">
                     </div>
                     <!-- /.image-layer -->
