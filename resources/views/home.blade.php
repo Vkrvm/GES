@@ -17,33 +17,9 @@
     }}'>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="swiper-slide">
-                    <div class="image-layer lazy-background" data-bg="{{ asset('images/backgrounds/main-slider-1-1.webp') }}"></div>
-                </div>
-                </div>
-                <!-- /.image-layer -->
-                <div class="main-slider-shape-1"></div>
-                <div class="main-slider-shape-2"></div>
-                <div class="main-slider-shape-3"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <div class="main-slider__content">
-                                <h2>
-                                    Where <br />
-                                    Strategy <br />
-                                    Meets <br>
-                                    Solutions
-                                </h2>
-                                <a href="{{ route('about') }}" class="thm-btn">Discover More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide">
-                    <div class="image-layer lazy-background" data-bg="{{ asset('images/backgrounds/main-slider-1-2.webp') }}"></div>
+                <div class="image-layer" style="
+                  background-image: url({{ asset('images/backgrounds/main-slider-1-1.webp') }});
+                ">
                 </div>
                 <!-- /.image-layer -->
                 <div class="main-slider-shape-1"></div>
@@ -66,10 +42,34 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide">
-                    <div class="image-layer lazy-background" data-bg="{{ asset('images/backgrounds/main-slider-1-3.webp') }}"></div>
+                <div class="image-layer" style="
+                  background-image: url({{ asset('images/backgrounds/main-slider-1-2.webp') }});
+                ">
                 </div>
-
+                <!-- /.image-layer -->
+                <div class="main-slider-shape-1"></div>
+                <div class="main-slider-shape-2"></div>
+                <div class="main-slider-shape-3"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="main-slider__content">
+                                <h2>
+                                    Where <br />
+                                    Strategy <br />
+                                    Meets <br>
+                                    Solutions
+                                </h2>
+                                <a href="{{ route('about') }}" class="thm-btn">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-layer" style="
+                  background-image: url({{ asset('images/backgrounds/main-slider-1-3.webp') }});">
+                </div>
                 <!-- /.image-layer -->
                 <div class="main-slider-shape-1"></div>
                 <div class="main-slider-shape-2"></div>
@@ -493,24 +493,4 @@
     </div>
 </section>
 <!--CTA One End-->
-
 @endsection
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const lazyBackgrounds = document.querySelectorAll(".lazy-background");
-
-        lazyBackgrounds.forEach(function(lazyBackground) {
-            const imageUrl = lazyBackground.getAttribute("data-bg");
-
-            // Create a new Image object to preload the background image
-            const img = new Image();
-            img.src = imageUrl;
-
-            img.onload = function() {
-                lazyBackground.style.backgroundImage = `url(${imageUrl})`;
-                lazyBackground.classList.remove(
-                "lazy-background"); // Optional: Remove the lazy class
-            };
-        });
-    });
-</script>
