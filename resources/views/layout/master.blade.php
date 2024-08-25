@@ -27,6 +27,7 @@
 
 
 
+    <link rel="preload" href="{{ asset('images/logo/Logo GES-01.webp') }}" as="image" type="image/webp" imagesizes="320px" imagesrcset="{{ asset('images/logo/Logo GES-01.webp') }}">
 
     <link rel="preload" href="{{ asset('vendors/bootstrap/css/bootstrap.min.css') }}" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -162,8 +163,8 @@
                 <div class="main-menu-wrapper clearfix">
                     <div class="main-menu-wrapper__left">
                         <div class="main-menu-wrapper__logo">
-                            <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
-                                    height="180" width="320" alt="logo" loading="lazy" /></a>
+                            <img src="{{ asset('images/logo/Logo GES-01.webp') }}" height="180" width="320" alt="logo" />
+
                         </div>
                         <div class="main-menu-wrapper__main-menu">
                             <a href="#" class="mobile-nav__toggler" aria-label="Sidebar-btn"><i
@@ -323,8 +324,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
-                        height="180" width="320" alt="logo" loading="lazy" /></a>
+                <img src="{{ asset('images/logo/Logo GES-01.webp') }}" height="180" width="320" alt="logo" />
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
