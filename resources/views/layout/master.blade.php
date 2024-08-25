@@ -208,9 +208,9 @@
                             <div class="footer-widget__column footer-widget__explore clearfix">
                                 <h3 class="footer-widget__title">Explore</h3>
                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                    <li><a href="{{ route('about') }}">About</a></li>
-                                    <li><a href="{{ asset('attachment/GESProfile.pdf') }}" download>Portfolio</a></li>
-                                    <li><a href="{{ route('contactus') }}">Contact</a></li>
+                                    <li><a href="{{ route('about') }}" aria-label="About">About</a></li>
+                                    <li><a href="{{ asset('attachment/GESProfile.pdf') }}" aria-label="Portfolio" download>Portfolio</a></li>
+                                    <li><a href="{{ route('contactus') }}" aria-label="Contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 <form class="footer-widget__newsletter-form">
                                     <div class="footer-widget__newsletter-input-box">
                                         <input type="email" placeholder="Email address" name="email" />
-                                        <button type="submit" class="footer-widget__newsletter-btn">
+                                        <button type="submit" class="footer-widget__newsletter-btn" aria-label="Submit">
                                             <i class="far fa-paper-plane"></i>
                                         </button>
                                     </div>
@@ -256,7 +256,7 @@
                                 </p>
                                 <h4 class="footer-widget__contact-info">
                                     <!-- <a href="tel:201116989222" class="footer-widget__contact-number">+20 11 - 1698 - 9222</a> -->
-                                    <a href="mailto: info@ges-adv.com" class="footer-widget__contact-email">
+                                    <a href="mailto: info@ges-adv.com" aria-label="Email" class="footer-widget__contact-email">
                                         info@ges-adv.com</a>
                                 </h4>
                             </div>
@@ -296,22 +296,22 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto: info@ges-adv.com"> info@ges-adv.com</a>
+                    <a href="mailto: info@ges-adv.com" aria-label="Email"> info@ges-adv.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:201116989222">+20 11 - 1698 - 9222</a>
+                    <a href="tel:201116989222" aria-label="Phone">+20 11 - 1698 - 9222</a>
                 </li>
             </ul>
             <!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
                     <a href="https://www.facebook.com/profile.php?id=61563149639231&mibextid=ZbWKwL"
-                        class="fab fa-facebook-square"></a>
+                        class="fab fa-facebook-square" aria-label="Facebook"></a>
                     <a href="https://www.instagram.com/ges_advertising_agency?igsh=MXI3cXVrZG56dGQ4NQ=="
-                        class="fab fa-instagram"></a>
+                        class="fab fa-instagram" aria-label="Instagram"></a>
                     <a href="https://www.linkedin.com/company/ges-for-advertising-and-corprate-solutions/"
-                        class="fab fa-linkedin"></a>
+                        class="fab fa-linkedin" aria-label="Linkedin"></a>
                 </div>
                 <!-- /.mobile-nav__social -->
             </div>
