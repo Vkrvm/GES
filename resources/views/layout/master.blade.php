@@ -132,7 +132,7 @@
                                     height="180" width="320" alt="logo" /></a>
                         </div>
                         <div class="main-menu-wrapper__main-menu">
-                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <a href="#" class="mobile-nav__toggler" aria-label="Sidebar-btn"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
                                 <li class="{{ Route::is('home') ? 'current' : '' }}"><a
                                         href="{{ route('home') }}">Home</a></li>
