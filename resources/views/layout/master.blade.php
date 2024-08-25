@@ -153,7 +153,7 @@
 
 <body>
     <div class="preloader">
-        <img class="preloader__image" src="{{ asset('images/loader.png') }}" alt="Loader Image" width="300"
+        <img class="preloader__image" src="{{ asset('images/loader.webp') }}" alt="Loader Image" width="300"
             height="169" />
     </div>
     <div class="page-wrapper">
