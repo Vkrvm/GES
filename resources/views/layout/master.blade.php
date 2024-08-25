@@ -120,7 +120,7 @@
 
 <body>
     <div class="preloader">
-        <img class="preloader__image" width="300" src="{{ asset('images/loader.png') }}" alt />
+        <img class="preloader__image" src="{{ asset('images/loader.png') }}" alt="Loader Image" width="300" height="169" />
     </div>
     <div class="page-wrapper">
         <header class="main-header clearfix">
