@@ -157,8 +157,10 @@
                         </div>
                         <div class="main-menu-wrapper__search-cat">
                             <a href="#"
-                                class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
+                                class="main-menu-wrapper__search search-toggler icon-magnifying-glass"
+                                aria-label="Search"></a>
                         </div>
+
                     </div>
                 </div>
             </nav>
