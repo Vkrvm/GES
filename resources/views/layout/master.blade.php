@@ -219,7 +219,7 @@
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
                                     <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
-                                        height="100" width="178" alt="Footer_logo" /></a>
+                                        height="100" width="178" loading="lazy" alt="Footer_logo" /></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
                                     <p class="footer-widget__about-text">
