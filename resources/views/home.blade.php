@@ -148,7 +148,7 @@
                         </h3>
                     </div>
                     <div class="welcome-one__feature-icon">
-                        <span><img src="{{ asset('images/icon/chart-line-up (1).png') }}" alt="line chart" loading="lazy" width="auto" height="auto"></span>
+                        <span><img src="{{ asset('images/icon/chart-line-up (1).png') }}" alt="line chart" loading="lazy" width="64" height="64"></span>
                     </div>
                     <div class="welcome-one__feature-count"></div>
                 </li>
@@ -205,10 +205,10 @@
                 <div class="work-together__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="work-together__img-box">
                         <div class="work-together-shape-1">
-                            <img src="{{ asset('images/shapes/work-together-shape-1.png') }}" alt="work-together" loading="lazy" width="auto" height="auto" />
+                            <img src="{{ asset('images/shapes/work-together-shape-1.png') }}" alt="work-together" loading="lazy" width=254" height="247" />
                         </div>
                         <div class="work-together__img-1">
-                            <img src="{{ asset('images/resources/Post-6.webp') }}" alt="work-together" loading="lazy" width="400px" height="auto" />
+                            <img src="{{ asset('images/resources/Post-6.webp') }}" alt="work-together" loading="lazy" width="400" height="400" />
                             <div class="work-together__img-2">
                                 {{-- <img src="{{asset(" images/resources/work-together-img-2.jpg")}}" alt /> --}}
                             </div>
