@@ -493,4 +493,24 @@
     </div>
 </section>
 <!--CTA One End-->
+
 @endsection
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lazyBackgrounds = document.querySelectorAll(".lazy-background");
+
+        lazyBackgrounds.forEach(function(lazyBackground) {
+            const imageUrl = lazyBackground.getAttribute("data-bg");
+
+            // Create a new Image object to preload the background image
+            const img = new Image();
+            img.src = imageUrl;
+
+            img.onload = function() {
+                lazyBackground.style.backgroundImage = `url(${imageUrl})`;
+                lazyBackground.classList.remove(
+                "lazy-background"); // Optional: Remove the lazy class
+            };
+        });
+    });
+</script>

@@ -333,25 +333,7 @@
         <!-- /.search-popup__content -->
     </div>
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const lazyBackgrounds = document.querySelectorAll(".lazy-background");
 
-            lazyBackgrounds.forEach(function(lazyBackground) {
-                const imageUrl = lazyBackground.getAttribute("data-bg");
-
-                // Create a new Image object to preload the background image
-                const img = new Image();
-                img.src = imageUrl;
-
-                img.onload = function() {
-                    lazyBackground.style.backgroundImage = `url(${imageUrl})`;
-                    lazyBackground.classList.remove(
-                    "lazy-background"); // Optional: Remove the lazy class
-                };
-            });
-        });
-    </script>
     <script src="{{ asset('vendors/jquery/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendors/jarallax/jarallax.min.js') }}"></script>
