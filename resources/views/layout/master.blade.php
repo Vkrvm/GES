@@ -219,7 +219,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
-                                    <a href="index-2.html"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
+                                    <a href="{{ route('home') }}"><img src="{{ asset('images/logo/Logo GES-01.webp') }}"
                                         height="100" width="178" loading="lazy" alt="Footer_logo" /></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">

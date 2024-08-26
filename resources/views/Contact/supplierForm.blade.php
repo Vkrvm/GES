@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
                         <li><span>/</span></li>
                         <li>contact</li>
                     </ul>
@@ -83,7 +83,7 @@
                                         <input type="file" class="form-control" id="companyProfile" name="companyProfile" required>
                                         <span class="text-danger">@error('companyProfile') {{$message}} @enderror </span>
                                     </div>
-                                </div>                                
+                                </div>
                                 <div class="mb-3">
                                     <div class="comment-form__input-box">
                                         <label for="phone" class="form-label">Phone *</label>
